@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assiginment</title>
+</head>
+<body>
+ 
+    <input type="text" name="" id="num1">
+    <input type="text" name="" id="num2"> 
+    <button onclick="view()">add</button>
+    <button onclick="view2()">sub</button>
+    <button onclick="view3()">multi</button>
+    <button onclick="view4()">div</button>
+    <h2 id="result">result: </h2>
+
+    <script>
+        function view() {
+          let a=parseFloat(document.getElementById('num1').value)
+          let b=parseFloat(document.getElementById('num2').value) 
+          let c=a+b
+          document.getElementById('result').innerHTML+=c
+        }
+        function view2() {
+          let a=parseFloat(document.getElementById('num1').value)
+          let b=parseFloat(document.getElementById('num2').value) 
+          let c=a-b
+          document.getElementById('result').innerHTML+=c
+        }
+        function view3() {
+          let a=parseFloat(document.getElementById('num1').value)
+          let b=parseFloat(document.getElementById('num2').value) 
+          let c=a*b
+          document.getElementById('result').innerHTML+=c
+        }
+        function view4() {
+          let a=parseFloat(document.getElementById('num1').value)
+          let b=parseFloat(document.getElementById('num2').value) 
+          let c=a/b
+          document.getElementById('result').innerHTML+=c
+        }
+
+    </script>
+</body>
+</html>
