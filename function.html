@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+
+    <h1>Assignment Operation</h1>
+    <button onclick="view('add')">add</button><br>
+    <button onclick="view('sub')">subtraction</button><br>
+    <button onclick="view('mul')">multiply</button><br>
+    <button onclick="view('div')">divide</button><br>
+    <input type="text" class="text" name="  " id="num1"><br>
+    <input type="text" class="text" name="  " id="num2">
+    <h2 id="result">result:</h2>
+
+    <script>
+        function view(x){
+            let c=''
+            console.log(x);
+            let a=parseFloat(document.getElementById('num1').value)
+            let b=parseFloat(document.getElementById('num2').value)
+            if(!a || !b){
+                alert('please enter the value')
+            }
+            else{
+                  if(x=='add'){
+                    c=a+b
+                  }
+                  else if(x=='sub'){
+                    c=a-b
+                  }
+                  else if(x=='mul'){
+                    c=a*b
+                  }
+                  else if(x=='div'){
+                    c=a/b
+                    }
+                    
+                // switch(x){
+                //     case 'add':
+                //         console.log('adding');
+                //         c=a+b
+                //         break;
+                //     case 'sub':
+                //         console.log('subtraction');
+                //         c=a-b
+                //         break;
+                //     case 'mul':
+                //         console.log('multipilication');
+                //         c=a*b
+                //         break;  
+                //     case 'div':
+                //         console.log('division');
+                //         c=a/b
+                // }
+            }   
+                document.getElementById('result').innerHTML =c
+        
+        }
+    </script>
+</body>
+</html>
